@@ -4,10 +4,11 @@ import TaskCard from "../components/Card/TaskCard";
 
 
 async function loadTask() {
-  const data = await prisma.task.findMany();
-  return data;
+  return await prisma.task.findMany();
+
 }
 
+export const dynamic = "force-dynamic"
 
 async function HomePage ({params}) {
   const task = await loadTask();
