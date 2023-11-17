@@ -14,7 +14,7 @@ async function HomePage ({params}) {
 
   return (
     <>
-      <h1>Organizador de tareas Abuelo</h1>
+      <h1 className="font-bold text-2xl py-5 mx-3">Organizador de tareas Abuelo</h1>
       <section className="container mx-auto">
         <div className="grid grid-cols-3 gap-3 w-auto h-auto">
           {task?.map((elem) => (
